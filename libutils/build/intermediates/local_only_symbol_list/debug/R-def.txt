@@ -1,0 +1,5 @@
+R_DEF: Internal format may change without notice
+local
+drawable effect_none
+drawable ic_none
+drawable imageloader_default_cover_bg

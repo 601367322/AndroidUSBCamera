@@ -1,0 +1,1 @@
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/CMakeLists.txt

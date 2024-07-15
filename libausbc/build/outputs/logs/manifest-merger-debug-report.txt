@@ -1,0 +1,33 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:2:1-6:12
+	package
+		ADDED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:3:5-32
+		INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
+		INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.usb.host
+ADDED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:4:5-61
+	android:name
+		ADDED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:4:19-59
+uses-permission#android.permission.CAMERA
+ADDED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:5:5-65
+	android:name
+		ADDED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:5:22-62
+uses-sdk
+INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
+INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
+INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
+INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
+		ADDED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
+		INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
+		ADDED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
+		INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
