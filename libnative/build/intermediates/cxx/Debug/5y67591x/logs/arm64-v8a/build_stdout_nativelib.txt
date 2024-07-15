@@ -1,2 +1,446 @@
 ninja: Entering directory `/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/Debug/5y67591x/arm64-v8a'
-ninja: no work to do.
+[1/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/mpglib_interface.c.o
+[2/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/fft.c.o
+[3/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/newmdct.c.o
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/newmdct.c:985:21: warning: implicitly declaring library function 'memset' with type 'void *(void *, int, unsigned long)' [-Wimplicit-function-declaration]
+                    memset(mdct_enc, 0, 18 * sizeof(FLOAT));
+                    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/newmdct.c:985:21: note: include the header <string.h> or explicitly provide a declaration for 'memset'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/newmdct.c:1036:13: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned long)' [-Wimplicit-function-declaration]
+            memcpy(esv->sb_sample[ch][0], esv->sb_sample[ch][1], 576 * sizeof(FLOAT));
+            ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/newmdct.c:1036:13: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+2 warnings generated.
+[4/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/presets.c.o
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:170:5: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    SET_OPTION(quant_comp, set->quant_comp, -1);
+    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:170:5: note: use function 'abs' instead
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:170:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:171:5: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    SET_OPTION(quant_comp_short, set->quant_comp_s, -1);
+    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:171:5: note: use function 'abs' instead
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:171:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:280:5: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    SET_OPTION(quant_comp, abr_switch_map[r].quant_comp, -1);
+    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:280:5: note: use function 'abs' instead
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:280:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:281:5: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+    SET_OPTION(quant_comp_short, abr_switch_map[r].quant_comp_s, -1);
+    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:281:5: note: use function 'abs' instead
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:281:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/presets.c:36:16: note: expanded from macro 'SET_OPTION'
+    else if (!(fabs(lame_get_##opt(gfp) - def) > 0)) \
+               ^
+4 warnings generated.
+[5/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/gain_analysis.c.o
+[6/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/VbrTag.c.o
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:264:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[0], 8u, 0xffu);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:266:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[1], 3u, 7);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:267:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[1], 1u, (cfg->samplerate_out < 16000) ? 0 : 1);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:268:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[1], 1u, cfg->version);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:269:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[1], 2u, 4 - 3);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:270:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[1], 1u, (!cfg->error_protection) ? 1 : 0);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:272:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[2], 4u, eov->bitrate_index);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:273:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[2], 2u, cfg->samplerate_index);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:274:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[2], 1u, 0);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:275:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[2], 1u, cfg->extension);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:277:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[3], 2u, cfg->mode);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:278:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[3], 2u, eov->mode_ext);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:279:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[3], 1u, cfg->copyright);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:280:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[3], 1u, cfg->original);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:281:5: warning: shifting a negative signed value is undefined [-Wshift-negative-value]
+    SHIFT_IN_BITS_VALUE(buffer[3], 2u, cfg->emphasis);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:255:68: note: expanded from macro 'SHIFT_IN_BITS_VALUE'
+#define SHIFT_IN_BITS_VALUE(x,n,v) ( x = (x << (n)) | ( (v) & ~(-1 << (n)) ) )
+                                                                ~~ ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:431:23: warning: comparison of array 'pTagData->toc' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+        if (pTagData->toc != NULL) {
+            ~~~~~~~~~~^~~    ~~~~
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:569:9: warning: implicitly declaring library function 'memset' with type 'void *(void *, int, unsigned long)' [-Wimplicit-function-declaration]
+        memset(buffer, 0, sizeof(buffer));
+        ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:569:9: note: include the header <string.h> or explicitly provide a declaration for 'memset'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:805:5: warning: implicitly declaring library function 'strncpy' with type 'char *(char *, const char *, unsigned long)' [-Wimplicit-function-declaration]
+    strncpy((char *) &pbtStreamBuffer[nBytesWritten], szVersion, 9);
+    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:805:5: note: include the header <string.h> or explicitly provide a declaration for 'strncpy'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:882:10: warning: implicitly declaring library function 'strncmp' with type 'int (const char *, const char *, unsigned long)' [-Wimplicit-function-declaration]
+    if (!strncmp((char *) id3v2Header, "ID3", 3)) {
+         ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:882:10: note: include the header <string.h> or explicitly provide a declaration for 'strncmp'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:993:5: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned long)' [-Wimplicit-function-declaration]
+    memcpy(&buffer[nStreamIndex], btToc, sizeof(btToc));
+    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/VbrTag.c:993:5: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+20 warnings generated.
+[7/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/id3tag.c.o
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/id3tag.c:227:25: warning: implicitly declaring library function 'strlen' with type 'unsigned long (const char *)' [-Wimplicit-function-declaration]
+    const size_t lenb = strlen(b);
+                        ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/id3tag.c:227:25: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/id3tag.c:285:5: warning: implicitly declaring library function 'memset' with type 'void *(void *, int, unsigned long)' [-Wimplicit-function-declaration]
+    memset(&gfc->tag_spec, 0, sizeof gfc->tag_spec);
+    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/id3tag.c:285:5: note: include the header <string.h> or explicitly provide a declaration for 'memset'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/id3tag.c:383:5: warning: implicitly declaring library function 'free' with type 'void (void *)' [-Wimplicit-function-declaration]
+    free(*dst);
+    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/id3tag.c:383:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/id3tag.c:391:20: warning: implicitly declaring library function 'calloc' with type 'void *(unsigned long, unsigned long)' [-Wimplicit-function-declaration]
+            *dst = lame_calloc(char, n + 1);
+                   ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/id3tag.c:63:42: note: expanded from macro 'lame_calloc'
+#define lame_calloc(TYPE, COUNT) ((TYPE*)calloc(COUNT, sizeof(TYPE)))
+                                         ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/id3tag.c:391:20: note: include the header <stdlib.h> or explicitly provide a declaration for 'calloc'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/id3tag.c:63:42: note: expanded from macro 'lame_calloc'
+#define lame_calloc(TYPE, COUNT) ((TYPE*)calloc(COUNT, sizeof(TYPE)))
+                                         ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/id3tag.c:393:17: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned long)' [-Wimplicit-function-declaration]
+                memcpy(*dst, src, n * sizeof(**dst));
+                ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/id3tag.c:393:17: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/id3tag.c:509:19: warning: implicitly declaring library function 'strtol' with type 'long (const char *, char **, int)' [-Wimplicit-function-declaration]
+    int     num = strtol(genre, &str, 10);
+                  ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/id3tag.c:509:19: note: include the header <stdlib.h> or explicitly provide a declaration for 'strtol'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/id3tag.c:594:45: warning: implicitly declaring library function 'strncmp' with type 'int (const char *, const char *, unsigned long)' [-Wimplicit-function-declaration]
+    else if (4 < size && data[0] == 0x89 && strncmp((const char *) &data[1], "PNG", 3) == 0) {
+                                            ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/id3tag.c:594:45: note: include the header <string.h> or explicitly provide a declaration for 'strncmp'
+7 warnings generated.
+[8/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/quantize.c.o
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/quantize.c:124:5: warning: implicitly declaring library function 'memset' with type 'void *(void *, int, unsigned long)' [-Wimplicit-function-declaration]
+    memset(&(xrpow[upper]), 0, (576 - upper) * sizeof(xrpow[0]));
+    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/quantize.c:124:5: note: include the header <string.h> or explicitly provide a declaration for 'memset'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/quantize.c:307:9: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned long)' [-Wimplicit-function-declaration]
+        memcpy(ixwork, cod_info->xr, 576 * sizeof(FLOAT));
+        ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/quantize.c:307:9: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/quantize.c:486:9: warning: implicit declaration of function 'qsort' is invalid in C99 [-Wimplicit-function-declaration]
+        qsort(&work[j - width], width, sizeof(FLOAT), floatcompare);
+        ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/quantize.c:1749:9: warning: implicitly declaring library function 'exit' with type 'void (int) __attribute__((noreturn))' [-Wimplicit-function-declaration]
+        exit(-1);
+        ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/quantize.c:1749:9: note: include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+4 warnings generated.
+[9/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/lame.c.o
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:583:20: warning: implicitly declaring library function 'calloc' with type 'void *(unsigned long, unsigned long)' [-Wimplicit-function-declaration]
+        gfc->ATH = calloc(1, sizeof(ATH_t));
+                   ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:583:20: note: include the header <stdlib.h> or explicitly provide a declaration for 'calloc'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:628:13: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        if (EQ(gfp->compression_ratio, 0))
+            ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:168:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:628:13: note: use function 'abs' instead
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:168:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:628:13: note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:168:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:628:13: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        if (EQ(gfp->compression_ratio, 0))
+            ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:170:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:628:13: note: use function 'abs' instead
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:170:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:628:13: note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:170:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:1310:21: warning: implicitly declaring library function 'strcat' with type 'char *(char *, const char *)' [-Wimplicit-function-declaration]
+    if (*dest != 0) strcat(dest, sep);
+                    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:1310:21: note: include the header <string.h> or explicitly provide a declaration for 'strcat'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:1596:13: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        if (NEQ(RadioGain, GAIN_NOT_ENOUGH_SAMPLES)) {
+            ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:175:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:168:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:1596:13: note: use function 'abs' instead
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:175:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:168:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:1596:13: note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:175:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:168:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:1596:13: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        if (NEQ(RadioGain, GAIN_NOT_ENOUGH_SAMPLES)) {
+            ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:175:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:170:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:1596:13: note: use function 'abs' instead
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:175:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:170:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:1596:13: note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:175:20: note: expanded from macro 'NEQ'
+#define NEQ(a,b) (!EQ(a,b))
+                   ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:170:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:1624:13: warning: implicitly declaring library function 'free' with type 'void (void *)' [-Wimplicit-function-declaration]
+            free(esv->in_buffer_0);
+            ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:1624:13: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:2040:13: warning: implicitly declaring library function 'memset' with type 'void *(void *, int, unsigned long)' [-Wimplicit-function-declaration]
+            memset(gfc->ov_enc.bitrate_channelmode_hist, 0,
+            ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/lame.c:2040:13: note: include the header <string.h> or explicitly provide a declaration for 'memset'
+8 warnings generated.
+[10/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/encoder.c.o
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/encoder.c:202:9: warning: implicitly declaring library function 'memset' with type 'void *(void *, int, unsigned long)' [-Wimplicit-function-declaration]
+        memset(primebuff0, 0, sizeof(primebuff0));
+        ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/encoder.c:202:9: note: include the header <string.h> or explicitly provide a declaration for 'memset'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/encoder.c:471:17: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned long)' [-Wimplicit-function-declaration]
+                memcpy(gfc->pinfo->xr[gr][ch], &gfc->l3_side.tt[gr][ch].xr[0], sizeof(FLOAT) * 576);
+                ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/encoder.c:471:17: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+2 warnings generated.
+[11/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/reservoir.c.o
+[12/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/bitstream.c.o
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/bitstream.c:141:5: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned long)' [-Wimplicit-function-declaration]
+    memcpy(&bs->buf[bs->buf_byte_idx], esv->header[esv->w_ptr].buf, cfg->sideinfo_len);
+    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/bitstream.c:141:5: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/bitstream.c:253:35: warning: implicitly declaring library function 'strlen' with type 'unsigned long (const char *)' [-Wimplicit-function-declaration]
+            for (i = 0; i < (int) strlen(version) && remainingBits >= 8; ++i) {
+                                  ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/bitstream.c:253:35: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/bitstream.c:331:5: warning: implicitly declaring library function 'memset' with type 'void *(void *, int, unsigned long)' [-Wimplicit-function-declaration]
+    memset(esv->header[esv->h_ptr].buf, 0, cfg->sideinfo_len);
+    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/bitstream.c:331:5: note: include the header <string.h> or explicitly provide a declaration for 'memset'
+3 warnings generated.
+[13/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/psymodel.c.o
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/psymodel.c:775:5: warning: implicitly declaring library function 'memset' with type 'void *(void *, int, unsigned long)' [-Wimplicit-function-declaration]
+    memset(&ns_hpfsmpl[0][0], 0, sizeof(ns_hpfsmpl));
+    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/psymodel.c:775:5: note: include the header <string.h> or explicitly provide a declaration for 'memset'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/psymodel.c:1442:5: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned long)' [-Wimplicit-function-declaration]
+    memcpy(&last_thm[0], &psv->thm[0], sizeof(last_thm));
+    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/psymodel.c:1442:5: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+2 warnings generated.
+[14/27] Building CXX object CMakeFiles/nativelib.dir/utils/logger.cpp.o
+[15/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/tables.c.o
+[16/27] Building CXX object CMakeFiles/nativelib.dir/module/yuv/yuv.cpp.o
+[17/27] Building CXX object CMakeFiles/nativelib.dir/module/mp3/mp3.cpp.o
+[18/27] Building CXX object CMakeFiles/nativelib.dir/proxy/proxy_mp3.cpp.o
+[19/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/version.c.o
+[20/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/set_get.c.o
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/set_get.c:1719:72: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        assert((0 <= gfp->interChRatio && gfp->interChRatio <= 1.0) || EQ(gfp->interChRatio, -1));
+                                                                       ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:168:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/set_get.c:1719:72: note: use function 'abs' instead
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:168:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/set_get.c:1719:72: note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:168:12: note: expanded from macro 'EQ'
+(fabs(a) > fabs(b)) \
+           ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/set_get.c:1719:72: warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+        assert((0 <= gfp->interChRatio && gfp->interChRatio <= 1.0) || EQ(gfp->interChRatio, -1));
+                                                                       ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:170:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/set_get.c:1719:72: note: use function 'abs' instead
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:170:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/set_get.c:1719:72: note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/machine.h:170:23: note: expanded from macro 'EQ'
+ : (fabs((a)-(b)) <= (fabs(b) * 1e-6f)))
+                      ^
+2 warnings generated.
+[21/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/util.c.o
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/util.c:52:9: warning: implicitly declaring library function 'free' with type 'void (void *)' [-Wimplicit-function-declaration]
+        free(gfc->tag_spec.title);
+        ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/util.c:52:9: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/util.c:170:28: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
+            ptr->pointer = malloc(size + bytes);
+                           ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/util.c:170:28: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/util.c:558:29: warning: implicitly declaring library function 'calloc' with type 'void *(unsigned long, unsigned long)' [-Wimplicit-function-declaration]
+        esv->inbuf_old[0] = calloc(BLACKSIZE, sizeof(esv->inbuf_old[0][0]));
+                            ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/util.c:558:29: note: include the header <stdlib.h> or explicitly provide a declaration for 'calloc'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/util.c:685:13: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned long)' [-Wimplicit-function-declaration]
+            memcpy(&mfbuf[ch][mf_size], &in_buffer[ch][0], nout * sizeof(mfbuf[0][0]));
+            ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/util.c:685:13: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+4 warnings generated.
+[22/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/quantize_pvt.c.o
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/quantize_pvt.c:1057:13: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned long)' [-Wimplicit-function-declaration]
+            memcpy(scalefac_sav, cod_info->scalefac, sizeof(scalefac_sav));
+            ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/quantize_pvt.c:1057:13: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+1 warning generated.
+[23/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/vbrquantize.c.o
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/vbrquantize.c:352:5: warning: implicitly declaring library function 'memset' with type 'void *(void *, int, unsigned long)' [-Wimplicit-function-declaration]
+    memset(did_it, 0, sizeof(did_it));
+    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/vbrquantize.c:352:5: note: include the header <string.h> or explicitly provide a declaration for 'memset'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/vbrquantize.c:994:5: warning: implicitly declaring library function 'exit' with type 'void (int) __attribute__((noreturn))' [-Wimplicit-function-declaration]
+    exit(-1);
+    ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/vbrquantize.c:994:5: note: include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+2 warnings generated.
+[24/27] Building C object CMakeFiles/nativelib.dir/module/mp3/lame/takehiro.c.o
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/takehiro.c:343:17: warning: implicitly declaring library function 'memset' with type 'void *(void *, int, unsigned long)' [-Wimplicit-function-declaration]
+                memset(&pi[cod_info->max_nonzero_coeff], 0,
+                ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/takehiro.c:343:17: note: include the header <string.h> or explicitly provide a declaration for 'memset'
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/takehiro.c:871:9: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned long)' [-Wimplicit-function-declaration]
+        memcpy(gi, cod_info2, sizeof(gr_info));
+        ^
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame/takehiro.c:871:9: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+2 warnings generated.
+[25/27] Building CXX object CMakeFiles/nativelib.dir/proxy/proxy_yuv.cpp.o
+[26/27] Building CXX object CMakeFiles/nativelib.dir/nativelib.cpp.o
+[27/27] Linking CXX shared library /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/build/intermediates/cxx/Debug/5y67591x/obj/arm64-v8a/libnativelib.so

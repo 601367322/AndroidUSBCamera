@@ -1,1 +1,0 @@
-/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/build/intermediates/cxx/Debug/5y67591x/obj/x86
