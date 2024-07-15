@@ -1,0 +1,1 @@
+/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/build/intermediates/cxx/RelWithDebInfo/2r1v6w3m/obj/x86

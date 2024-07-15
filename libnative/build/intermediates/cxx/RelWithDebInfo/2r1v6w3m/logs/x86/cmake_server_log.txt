@@ -1,0 +1,518 @@
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"supportedProtocolVersions\":[{\"isExperimental\":true,\"major\":1,\"minor\":1}],\"type\":\"hello\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\n  \"type\": \"handshake\",\n  \"cookie\": \"gradle-cmake-cookie\",\n  \"protocolVersion\": {\n    \"isExperimental\": true,\n    \"major\": 1,\n    \"minor\": 1\n  },\n  \"sourceDirectory\": \"/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp\",\n  \"buildDirectory\": \"/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86\",\n  \"generator\": \"Ninja\"\n}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"gradle-cmake-cookie\",\"inReplyTo\":\"handshake\",\"type\":\"reply\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\n  \"type\": \"configure\",\n  \"cacheArguments\": [\n    \"\",\n    \"-DCMAKE_SYSTEM_NAME\\u003dAndroid\",\n    \"-DCMAKE_EXPORT_COMPILE_COMMANDS\\u003dON\",\n    \"-DCMAKE_SYSTEM_VERSION\\u003d19\",\n    \"-DANDROID_PLATFORM\\u003dandroid-19\",\n    \"-DANDROID_ABI\\u003dx86\",\n    \"-DCMAKE_ANDROID_ARCH_ABI\\u003dx86\",\n    \"-DANDROID_NDK\\u003d/Users/sen/Documents/Android/ndk/25.2.9519653\",\n    \"-DCMAKE_ANDROID_NDK\\u003d/Users/sen/Documents/Android/ndk/25.2.9519653\",\n    \"-DCMAKE_TOOLCHAIN_FILE\\u003d/Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake\",\n    \"-DCMAKE_MAKE_PROGRAM\\u003d/Users/sen/Documents/Android/cmake/3.10.2.4988404/bin/ninja\",\n    \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\\u003d/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/build/intermediates/cxx/RelWithDebInfo/2r1v6w3m/obj/x86\",\n    \"-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\\u003d/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/build/intermediates/cxx/RelWithDebInfo/2r1v6w3m/obj/x86\",\n    \"-DCMAKE_BUILD_TYPE\\u003dRelWithDebInfo\"\n  ]\n}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\\n  An old version of CMake is being used that cannot automatically detect\\n  compiler attributes.  Compiler identification is being bypassed.  Some\\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\\n  CMake\'s built-in compiler identification.\\nCall Stack (most recent call first):\\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\\n  /Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)\\n  CMakeLists.txt:5 (project)\\n\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)\n  CMakeLists.txt:5 (project)\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)\n  CMakeLists.txt:5 (project)\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: /Users/sen/Documents/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "Check for working C compiler: /Users/sen/Documents/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang"
+
+CMAKE SERVER: message: "Check for working C compiler: /Users/sen/Documents/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\\n  An old version of CMake is being used that cannot automatically detect\\n  compiler attributes.  Compiler identification is being bypassed.  Some\\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\\n  CMake\'s built-in compiler identification.\\nCall Stack (most recent call first):\\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\\n\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":33,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: /Users/sen/Documents/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- works\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "Check for working C compiler: /Users/sen/Documents/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- works"
+
+CMAKE SERVER: message: "Check for working C compiler: /Users/sen/Documents/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- works"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compiler ABI info\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "Detecting C compiler ABI info"
+
+CMAKE SERVER: message: "Detecting C compiler ABI info"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\\n  An old version of CMake is being used that cannot automatically detect\\n  compiler attributes.  Compiler identification is being bypassed.  Some\\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\\n  CMake\'s built-in compiler identification.\\nCall Stack (most recent call first):\\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\\n\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":65,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compiler ABI info - done\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "Detecting C compiler ABI info - done"
+
+CMAKE SERVER: message: "Detecting C compiler ABI info - done"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compile features\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "Detecting C compile features"
+
+CMAKE SERVER: message: "Detecting C compile features"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\\n  An old version of CMake is being used that cannot automatically detect\\n  compiler attributes.  Compiler identification is being bypassed.  Some\\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\\n  CMake\'s built-in compiler identification.\\nCall Stack (most recent call first):\\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\\n\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":96,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\\n  An old version of CMake is being used that cannot automatically detect\\n  compiler attributes.  Compiler identification is being bypassed.  Some\\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\\n  CMake\'s built-in compiler identification.\\nCall Stack (most recent call first):\\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\\n\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":126,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\\n  An old version of CMake is being used that cannot automatically detect\\n  compiler attributes.  Compiler identification is being bypassed.  Some\\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\\n  CMake\'s built-in compiler identification.\\nCall Stack (most recent call first):\\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\\n\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":155,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compile features - done\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "Detecting C compile features - done"
+
+CMAKE SERVER: message: "Detecting C compile features - done"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working CXX compiler: /Users/sen/Documents/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "Check for working CXX compiler: /Users/sen/Documents/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+
+CMAKE SERVER: message: "Check for working CXX compiler: /Users/sen/Documents/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\\n  An old version of CMake is being used that cannot automatically detect\\n  compiler attributes.  Compiler identification is being bypassed.  Some\\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\\n  CMake\'s built-in compiler identification.\\nCall Stack (most recent call first):\\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\\n\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":184,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working CXX compiler: /Users/sen/Documents/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ -- works\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "Check for working CXX compiler: /Users/sen/Documents/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ -- works"
+
+CMAKE SERVER: message: "Check for working CXX compiler: /Users/sen/Documents/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ -- works"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compiler ABI info\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "Detecting CXX compiler ABI info"
+
+CMAKE SERVER: message: "Detecting CXX compiler ABI info"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\\n  An old version of CMake is being used that cannot automatically detect\\n  compiler attributes.  Compiler identification is being bypassed.  Some\\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\\n  CMake\'s built-in compiler identification.\\nCall Stack (most recent call first):\\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\\n\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":211,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compiler ABI info - done\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "Detecting CXX compiler ABI info - done"
+
+CMAKE SERVER: message: "Detecting CXX compiler ABI info - done"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compile features\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "Detecting CXX compile features"
+
+CMAKE SERVER: message: "Detecting CXX compile features"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\\n  An old version of CMake is being used that cannot automatically detect\\n  compiler attributes.  Compiler identification is being bypassed.  Some\\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\\n  CMake\'s built-in compiler identification.\\nCall Stack (most recent call first):\\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\\n\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":237,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\\n  An old version of CMake is being used that cannot automatically detect\\n  compiler attributes.  Compiler identification is being bypassed.  Some\\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\\n  CMake\'s built-in compiler identification.\\nCall Stack (most recent call first):\\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\\n\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":262,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\\n  An old version of CMake is being used that cannot automatically detect\\n  compiler attributes.  Compiler identification is being bypassed.  Some\\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\\n  CMake\'s built-in compiler identification.\\nCall Stack (most recent call first):\\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\\n\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":287,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\\n  An old version of CMake is being used that cannot automatically detect\\n  compiler attributes.  Compiler identification is being bypassed.  Some\\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\\n  CMake\'s built-in compiler identification.\\nCall Stack (most recent call first):\\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\\n\\n\",\"title\":\"Warning\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: level: WARN
+message: "CMake Warning at /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):\n  An old version of CMake is being used that cannot automatically detect\n  compiler attributes.  Compiler identification is being bypassed.  Some\n  values may be wrong or missing.  Update to CMake 3.19 or newer to use\n  CMake\'s built-in compiler identification.\nCall Stack (most recent call first):\n  /Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)\n  /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":311,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compile features - done\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "Detecting CXX compile features - done"
+
+CMAKE SERVER: message: "Detecting CXX compile features - done"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":1000,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Configuring done\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "Configuring done"
+
+CMAKE SERVER: message: "Configuring done"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"type\":\"reply\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"type\":\"compute\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"progressCurrent\":1000,\"progressMaximum\":1000,\"progressMessage\":\"Generating\",\"progressMinimum\":0,\"type\":\"progress\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"message\":\"Generating done\",\"type\":\"message\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "Generating done"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"type\":\"reply\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"type\":\"cmakeInputs\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"buildFiles\":[{\"isCMake\":true,\"isTemporary\":false,\"sources\":[\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in\"]},{\"isCMake\":false,\"isTemporary\":false,\"sources\":[\"CMakeLists.txt\",\"/Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake\",\"/Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake\",\"/Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/platforms.cmake\",\"/Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/compiler_id.cmake\",\"/Users/sen/Documents/Android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake\"]},{\"isCMake\":false,\"isTemporary\":true,\"sources\":[\"../../../.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeSystem.cmake\",\"../../../.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeCCompiler.cmake\",\"../../../.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake\",\"../../../.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/feature_tests.c\",\"../../../.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/feature_tests.c\",\"../../../.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/feature_tests.c\",\"../../../.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeCCompiler.cmake\",\"../../../.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/feature_tests.cxx\",\"../../../.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/feature_tests.cxx\",\"../../../.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/feature_tests.cxx\",\"../../../.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/feature_tests.cxx\",\"../../../.cxx/RelWithDebInfo/2r1v6w3m/x86/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake\"]}],\"cmakeRootDirectory\":\"/Users/sen/Documents/Android/cmake/3.10.2.4988404/share/cmake-3.10\",\"cookie\":\"\",\"inReplyTo\":\"cmakeInputs\",\"sourceDirectory\":\"/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp\",\"type\":\"reply\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"type\":\"codemodel\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "\n"
+
+CMAKE SERVER: message: "[== \"CMake Server\" ==[\n"
+
+CMAKE SERVER: message: "{\"configurations\":[{\"name\":\"RelWithDebInfo\",\"projects\":[{\"buildDirectory\":\"/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86\",\"name\":\"nativelib\",\"sourceDirectory\":\"/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp\",\"targets\":[{\"artifacts\":[\"/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/build/intermediates/cxx/RelWithDebInfo/2r1v6w3m/obj/x86/libnativelib.so\"],\"buildDirectory\":\"/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC  \",\"defines\":[\"nativelib_EXPORTS\"],\"includePath\":[{\"path\":\"/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame\"}],\"isGenerated\":false,\"language\":\"CXX\",\"sources\":[\"utils/logger.cpp\",\"module/yuv/yuv.cpp\",\"module/mp3/mp3.cpp\",\"proxy/proxy_yuv.cpp\",\"proxy/proxy_mp3.cpp\",\"nativelib.cpp\"]},{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -g -DNDEBUG -fPIC  \",\"defines\":[\"nativelib_EXPORTS\"],\"includePath\":[{\"path\":\"/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/module/mp3/lame\"}],\"isGenerated\":false,\"language\":\"C\",\"sources\":[\"module/mp3/lame/VbrTag.c\",\"module/mp3/lame/bitstream.c\",\"module/mp3/lame/encoder.c\",\"module/mp3/lame/fft.c\",\"module/mp3/lame/gain_analysis.c\",\"module/mp3/lame/id3tag.c\",\"module/mp3/lame/lame.c\",\"module/mp3/lame/mpglib_interface.c\",\"module/mp3/lame/newmdct.c\",\"module/mp3/lame/presets.c\",\"module/mp3/lame/psymodel.c\",\"module/mp3/lame/quantize.c\",\"module/mp3/lame/quantize_pvt.c\",\"module/mp3/lame/reservoir.c\",\"module/mp3/lame/set_get.c\",\"module/mp3/lame/tables.c\",\"module/mp3/lame/takehiro.c\",\"module/mp3/lame/util.c\",\"module/mp3/lame/vbrquantize.c\",\"module/mp3/lame/version.c\"]}],\"fullName\":\"libnativelib.so\",\"linkFlags\":\"-static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments\",\"linkLibraries\":\"-llog -latomic -lm\",\"linkerLanguage\":\"CXX\",\"name\":\"nativelib\",\"sourceDirectory\":\"/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp\",\"sysroot\":\"/Users/sen/Documents/Android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/sysroot\",\"type\":\"SHARED_LIBRARY\"}]}]}],\"cookie\":\"\",\"inReplyTo\":\"codemodel\",\"type\":\"reply\"}\n"
+
+CMAKE SERVER: message: "]== \"CMake Server\" ==]\n"
+
+CMAKE SERVER: message: "Exiting generation of /Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86/compile_commands.json.bin normally"
+

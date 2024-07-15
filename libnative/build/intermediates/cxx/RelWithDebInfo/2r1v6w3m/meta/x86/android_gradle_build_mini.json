@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/sen/Documents/Android/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/sen/Documents/Android/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "nativelib-RelWithDebInfo-x86": {
+      "artifactName": "nativelib",
+      "buildCommandComponents": [
+        "/Users/sen/Documents/Android/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/RelWithDebInfo/2r1v6w3m/x86",
+        "nativelib"
+      ],
+      "abi": "x86",
+      "output": "/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/build/intermediates/cxx/RelWithDebInfo/2r1v6w3m/obj/x86/libnativelib.so",
+      "runtimeFiles": []
+    }
+  }
+}
