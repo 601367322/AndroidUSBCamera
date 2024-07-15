@@ -374,8 +374,11 @@ public abstract class MediaDecoder implements IMediaCodec {
 			mMediaExtractor = null;
 		}
 		if (mMediaMetadataRetriever != null) {
-			mMediaMetadataRetriever.release();
-			mMediaMetadataRetriever = null;
+            try {
+                mMediaMetadataRetriever.release();
+            } catch (IOException ignored) {
+            }
+            mMediaMetadataRetriever = null;
 		}
 		mTrackIndex = -1;
 		mDuration = 0;

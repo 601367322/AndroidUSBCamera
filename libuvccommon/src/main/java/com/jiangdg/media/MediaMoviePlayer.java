@@ -1069,8 +1069,12 @@ public class MediaMoviePlayer {
         mVideoInputBuffers = mVideoOutputBuffers = null;
         mAudioInputBuffers = mAudioOutputBuffers = null;
 		if (mMetadata != null) {
-			mMetadata.release();
-			mMetadata = null;
+            try {
+                mMetadata.release();
+            } catch (IOException ignored) {
+
+            }
+            mMetadata = null;
 		}
 		synchronized (mSync) {
 			mVideoOutputDone = mVideoInputDone = mAudioOutputDone = mAudioInputDone = true;

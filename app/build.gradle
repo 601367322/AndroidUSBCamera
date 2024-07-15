@@ -45,6 +45,7 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.multidex:multidex:2.0.1'
     implementation "androidx.appcompat:appcompat:${androidXVersion}"
     implementation "androidx.core:core-ktx:${kotlinCoreVersion}"
     implementation "com.google.android.material:material:${materialVersion}"
