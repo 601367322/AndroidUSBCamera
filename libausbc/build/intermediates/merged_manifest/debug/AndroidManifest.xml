@@ -3,7 +3,7 @@
     package="com.jiangdg.ausbc" >
 
     <uses-sdk
-        android:minSdkVersion="28"
+        android:minSdkVersion="26"
         android:targetSdkVersion="34" />
 
     <uses-feature android:name="android.hardware.usb.host" />

@@ -15,6 +15,7 @@
  */
 package com.jiangdg.ausbc.encode.audio
 
+import android.annotation.SuppressLint
 import android.media.*
 import android.os.Process
 import com.jiangdg.ausbc.encode.bean.RawData
@@ -25,21 +26,24 @@ import com.jiangdg.ausbc.utils.Utils
  *
  * @author Created by jiangdg on 2022/9/14
  */
-class AudioStrategySystem : IAudioStrategy {
+class AudioStrategySystem(config: RecordConfig) : IAudioStrategy {
     private val mBufferSize: Int by lazy {
         AudioRecord.getMinBufferSize(
-            SAMPLE_RATE,
-            CHANNEL_IN_CONFIG,
-            AUDIO_FORMAT_16BIT
+            config.sampleRate,
+            config.channelConfig,
+            config.encodingConfig
         )
     }
     private var mAudioRecord: AudioRecord? = null
+    private var mConfig: RecordConfig = config
 
+    @SuppressLint("MissingPermission")
     override fun initAudioRecord() {
         try {
             Process.setThreadPriority(Process.THREAD_PRIORITY_AUDIO)
-            mAudioRecord = AudioRecord(AUDIO_RECORD_SOURCE, SAMPLE_RATE,
-                CHANNEL_IN_CONFIG, AUDIO_FORMAT_16BIT, mBufferSize
+            mAudioRecord = AudioRecord(
+                AUDIO_RECORD_SOURCE, mConfig.sampleRate,
+                mConfig.channelConfig, mConfig.encodingConfig, mBufferSize
             )
             if (Utils.debugCamera) {
                 Logger.i(TAG, "initAudioRecord success")
@@ -84,7 +88,7 @@ class AudioStrategySystem : IAudioStrategy {
     }
 
     override fun read(): RawData? {
-        return if (! isRecording()) {
+        return if (!isRecording()) {
             null
         } else {
             val data = ByteArray(mBufferSize)
@@ -93,22 +97,27 @@ class AudioStrategySystem : IAudioStrategy {
         }
     }
 
-    override fun isRecording(): Boolean = mAudioRecord?.recordingState == AudioRecord.RECORDSTATE_RECORDING
+    override fun isRecording(): Boolean =
+        mAudioRecord?.recordingState == AudioRecord.RECORDSTATE_RECORDING
 
-    override fun getSampleRate(): Int = SAMPLE_RATE
+    override fun getSampleRate(): Int {
+        return mConfig.sampleRate
+    }
 
-    override fun getAudioFormat(): Int = AUDIO_FORMAT_16BIT
+    override fun getAudioFormat(): Int {
+        return mConfig.encodingConfig
+    }
 
-    override fun getChannelCount(): Int = CHANNEL_COUNT
+    override fun getChannelCount(): Int {
+        return mConfig.channelCount
+    }
 
-    override fun getChannelConfig(): Int = CHANNEL_IN_CONFIG
+    override fun getChannelConfig(): Int {
+        return mConfig.channelConfig
+    }
 
     companion object {
         private const val TAG = "AudioSystem"
-        private const val SAMPLE_RATE = 8000
-        private const val CHANNEL_COUNT = 1
-        private const val CHANNEL_IN_CONFIG = AudioFormat.CHANNEL_IN_MONO
-        private const val AUDIO_FORMAT_16BIT = AudioFormat.ENCODING_PCM_16BIT
         private const val AUDIO_RECORD_SOURCE = MediaRecorder.AudioSource.MIC
     }
 }

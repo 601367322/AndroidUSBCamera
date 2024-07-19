@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/sen/Documents/Android/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/Debug/5y67591x/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/sen/Documents/Android/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/Debug/5y67591x/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "nativelib-Debug-x86": {
+      "artifactName": "nativelib",
+      "buildCommandComponents": [
+        "/Users/sen/Documents/Android/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/.cxx/Debug/5y67591x/x86",
+        "nativelib"
+      ],
+      "abi": "x86",
+      "output": "/Users/sen/Documents/project/trtc/AndroidUSBCamera/libnative/build/intermediates/cxx/Debug/5y67591x/obj/x86/libnativelib.so",
+      "runtimeFiles": []
+    }
+  }
+}

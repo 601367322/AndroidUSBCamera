@@ -3,7 +3,7 @@
     package="com.jiangdg.common" >
 
     <uses-sdk
-        android:minSdkVersion="28"
+        android:minSdkVersion="26"
         android:targetSdkVersion="34" />
 
 </manifest>

@@ -3,7 +3,7 @@
 3    package="com.jiangdg.common" >
 4
 5    <uses-sdk
-6        android:minSdkVersion="28"
+6        android:minSdkVersion="26"
 6-->/Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvccommon/src/main/AndroidManifest.xml
 7        android:targetSdkVersion="34" />
 7-->/Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvccommon/src/main/AndroidManifest.xml

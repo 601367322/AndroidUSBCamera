@@ -3,7 +3,7 @@
 3    package="com.jiangdg.ausbc" >
 4
 5    <uses-sdk
-6        android:minSdkVersion="28"
+6        android:minSdkVersion="26"
 6-->/Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
 7        android:targetSdkVersion="34" />
 7-->/Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml

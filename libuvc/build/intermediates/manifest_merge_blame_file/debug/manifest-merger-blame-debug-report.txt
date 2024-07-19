@@ -25,7 +25,7 @@
 25    package="com.jiangdg.uvccamera" >
 26
 27    <uses-sdk
-28        android:minSdkVersion="28"
+28        android:minSdkVersion="26"
 28-->/Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
 29        android:targetSdkVersion="34" />
 29-->/Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
