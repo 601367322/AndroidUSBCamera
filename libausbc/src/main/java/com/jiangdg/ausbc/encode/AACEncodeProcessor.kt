@@ -22,6 +22,7 @@ import com.jiangdg.ausbc.callback.IEncodeDataCallBack
 import com.jiangdg.ausbc.callback.IPlayCallBack
 import com.jiangdg.ausbc.encode.audio.AudioStrategySystem
 import com.jiangdg.ausbc.encode.audio.IAudioStrategy
+import com.jiangdg.ausbc.encode.audio.RecordConfig
 import com.jiangdg.ausbc.encode.bean.RawData
 import com.jiangdg.ausbc.utils.Logger
 import com.jiangdg.ausbc.utils.MediaUtils
@@ -59,7 +60,7 @@ class AACEncodeProcessor(strategy: IAudioStrategy? = null) : AbstractProcessor()
     private val mRecordMp3State: AtomicBoolean by lazy {
         AtomicBoolean(false)
     }
-    private var mAudioRecord: IAudioStrategy = strategy ?: AudioStrategySystem()
+    private var mAudioRecord: IAudioStrategy = strategy ?: AudioStrategySystem(RecordConfig())
 
     private var mSamplingRateIndex: Int = -1
 

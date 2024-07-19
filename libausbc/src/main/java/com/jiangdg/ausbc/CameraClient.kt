@@ -36,6 +36,7 @@ import com.jiangdg.ausbc.encode.AACEncodeProcessor
 import com.jiangdg.ausbc.encode.AbstractProcessor
 import com.jiangdg.ausbc.encode.H264EncodeProcessor
 import com.jiangdg.ausbc.encode.audio.AudioStrategySystem
+import com.jiangdg.ausbc.encode.audio.RecordConfig
 import com.jiangdg.ausbc.encode.bean.RawData
 import com.jiangdg.ausbc.encode.muxer.Mp4Muxer
 import com.jiangdg.ausbc.render.RenderManager
@@ -534,7 +535,7 @@ class CameraClient internal constructor(builder: Builder) : IPreviewDataCallBack
         } else {
             mRequest!!.previewHeight
         }
-        mAudioProcess = AACEncodeProcessor(AudioStrategySystem())
+        mAudioProcess = AACEncodeProcessor(AudioStrategySystem(RecordConfig()))
         mVideoProcess = H264EncodeProcessor(encodeWidth, encodeHeight, isEnableGLEs)
     }
 

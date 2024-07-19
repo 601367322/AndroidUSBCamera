@@ -15,6 +15,7 @@ import com.jiangdg.ausbc.encode.H264EncodeProcessor
 import com.jiangdg.ausbc.encode.audio.AudioStrategySystem
 import com.jiangdg.ausbc.encode.audio.AudioStrategyUAC
 import com.jiangdg.ausbc.encode.audio.IAudioStrategy
+import com.jiangdg.ausbc.encode.audio.RecordConfig
 import com.jiangdg.ausbc.encode.bean.RawData
 import com.jiangdg.ausbc.encode.muxer.Mp4Muxer
 import com.jiangdg.ausbc.render.RenderManager
@@ -399,7 +400,7 @@ class MultiCameraClient(ctx: Context, callback: IDeviceConnectCallBack?) {
                         if (Utils.debugCamera) {
                             Logger.i(TAG, "Audio record by using system mic")
                         }
-                        AudioStrategySystem()
+                        AudioStrategySystem(RecordConfig())
                     }
                 }
                 CameraRequest.AudioSource.SOURCE_DEV_MIC -> {
@@ -415,7 +416,7 @@ class MultiCameraClient(ctx: Context, callback: IDeviceConnectCallBack?) {
                     if (Utils.debugCamera) {
                         Logger.i(TAG, "Audio record by using system mic")
                     }
-                    AudioStrategySystem()
+                    AudioStrategySystem(RecordConfig())
                 }
                 else -> {
                     null
