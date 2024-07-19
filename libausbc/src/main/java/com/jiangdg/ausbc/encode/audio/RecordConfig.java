@@ -8,6 +8,18 @@ import java.util.Locale;
 
 public class RecordConfig implements Serializable {
     /**
+     * 自动增益
+     */
+    private boolean isEnableAGC = true;
+    /**
+     * 回音消除
+     */
+    private boolean isEnableAEC = true;
+    /**
+     * 噪音抑制
+     */
+    private boolean isEnableNS = true;
+    /**
      * 录音格式
      */
     private RecordFormat format = RecordFormat.PCM;
@@ -30,10 +42,6 @@ public class RecordConfig implements Serializable {
     public RecordConfig() {
     }
 
-    public RecordConfig(RecordFormat format) {
-        this.format = format;
-    }
-
     /**
      * @param format         录音文件的格式
      * @param channelConfig  声道配置
@@ -43,14 +51,19 @@ public class RecordConfig implements Serializable {
      *                       8Bit： See {@link AudioFormat#ENCODING_PCM_8BIT}
      *                       16Bit: See {@link AudioFormat#ENCODING_PCM_16BIT},
      * @param sampleRate     采样率 hz: 8000/16000/44100
+     * @param isEnableAGC 自动增益
+     * @param isEnableAEC 回音消除
+     * @param isEnableNS 噪音抑制
      */
-    public RecordConfig(RecordFormat format, int channelConfig, int encodingConfig, int sampleRate) {
+    public RecordConfig(RecordFormat format, int channelConfig, int encodingConfig, int sampleRate, boolean isEnableAGC, boolean isEnableAEC, boolean isEnableNS) {
         this.format = format;
         this.channelConfig = channelConfig;
         this.encodingConfig = encodingConfig;
         this.sampleRate = sampleRate;
+        this.isEnableAGC= isEnableAGC;
+        this.isEnableAEC= isEnableAEC;
+        this.isEnableNS= isEnableNS;
     }
-
 
 
     /**
@@ -142,6 +155,18 @@ public class RecordConfig implements Serializable {
     @Override
     public String toString() {
         return String.format(Locale.getDefault(), "录制格式： %s,采样率：%sHz,位宽：%s bit,声道数：%s", format, sampleRate, getEncoding(), getChannelCount());
+    }
+
+    public boolean isAECAailable() {
+        return isEnableAEC;
+    }
+
+    public boolean isNSAvailable() {
+        return isEnableNS;
+    }
+
+    public boolean isAGCvailable() {
+        return isEnableAGC;
     }
 
     public enum RecordFormat {

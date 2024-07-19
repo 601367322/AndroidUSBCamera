@@ -17,6 +17,10 @@ package com.jiangdg.ausbc.encode.audio
 
 import android.annotation.SuppressLint
 import android.media.*
+import android.media.audiofx.AcousticEchoCanceler
+import android.media.audiofx.AudioEffect
+import android.media.audiofx.AutomaticGainControl
+import android.media.audiofx.NoiseSuppressor
 import android.os.Process
 import com.jiangdg.ausbc.encode.bean.RawData
 import com.jiangdg.ausbc.utils.Logger
@@ -45,6 +49,32 @@ class AudioStrategySystem(config: RecordConfig) : IAudioStrategy {
                 AUDIO_RECORD_SOURCE, mConfig.sampleRate,
                 mConfig.channelConfig, mConfig.encodingConfig, mBufferSize
             )
+            if (mConfig.isAECAailable()) {
+                val acousticEchoCanceler = AcousticEchoCanceler
+                    .create(mAudioRecord!!.audioSessionId)
+                val resultCode = acousticEchoCanceler.setEnabled(true)
+                if (AudioEffect.SUCCESS == resultCode) {
+                    Logger.d(TAG, "aec-->success")
+                }
+            }
+
+            if (mConfig.isNSAvailable()) {
+                val noiseSuppressor = NoiseSuppressor
+                    .create(mAudioRecord!!.audioSessionId)
+                val resultCode = noiseSuppressor.setEnabled(true)
+                if (AudioEffect.SUCCESS == resultCode) {
+                    Logger.d(TAG, "ns-->success")
+                }
+            }
+
+            if (mConfig.isAGCvailable()) {
+                val automaticGainControl = AutomaticGainControl
+                    .create(mAudioRecord!!.audioSessionId)
+                val resultCode = automaticGainControl.setEnabled(true)
+                if (AudioEffect.SUCCESS == resultCode) {
+                    Logger.d(TAG, "agc-->success")
+                }
+            }
             if (Utils.debugCamera) {
                 Logger.i(TAG, "initAudioRecord success")
             }
