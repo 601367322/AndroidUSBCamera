@@ -151,23 +151,24 @@ public class RecordConfig implements Serializable {
         return this;
     }
 
+    public boolean isEnableAGC() {
+        return isEnableAGC;
+    }
+
+    public boolean isEnableAEC() {
+        return isEnableAEC;
+    }
+
+    public boolean isEnableNS() {
+        return isEnableNS;
+    }
 
     @Override
     public String toString() {
         return String.format(Locale.getDefault(), "录制格式： %s,采样率：%sHz,位宽：%s bit,声道数：%s", format, sampleRate, getEncoding(), getChannelCount());
     }
 
-    public boolean isAECAailable() {
-        return isEnableAEC;
-    }
 
-    public boolean isNSAvailable() {
-        return isEnableNS;
-    }
-
-    public boolean isAGCvailable() {
-        return isEnableAGC;
-    }
 
     public enum RecordFormat {
 

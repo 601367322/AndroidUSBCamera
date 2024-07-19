@@ -40,6 +40,9 @@ class AudioStrategySystem(config: RecordConfig) : IAudioStrategy {
     }
     private var mAudioRecord: AudioRecord? = null
     private var mConfig: RecordConfig = config
+    private var mAcousticEchoCanceler: AcousticEchoCanceler? = null
+    private var mNoiseSuppressor: NoiseSuppressor? = null
+    private var mAutomaticGainControl: AutomaticGainControl? = null
 
     @SuppressLint("MissingPermission")
     override fun initAudioRecord() {
@@ -49,28 +52,28 @@ class AudioStrategySystem(config: RecordConfig) : IAudioStrategy {
                 AUDIO_RECORD_SOURCE, mConfig.sampleRate,
                 mConfig.channelConfig, mConfig.encodingConfig, mBufferSize
             )
-            if (mConfig.isAECAailable()) {
-                val acousticEchoCanceler = AcousticEchoCanceler
+            if (mConfig.isEnableAEC() && AcousticEchoCanceler.isAvailable()) {
+                mAcousticEchoCanceler = AcousticEchoCanceler
                     .create(mAudioRecord!!.audioSessionId)
-                val resultCode = acousticEchoCanceler.setEnabled(true)
+                val resultCode = mAcousticEchoCanceler!!.setEnabled(true)
                 if (AudioEffect.SUCCESS == resultCode) {
                     Logger.d(TAG, "aec-->success")
                 }
             }
 
-            if (mConfig.isNSAvailable()) {
-                val noiseSuppressor = NoiseSuppressor
+            if (mConfig.isEnableNS() && NoiseSuppressor.isAvailable()) {
+                mNoiseSuppressor = NoiseSuppressor
                     .create(mAudioRecord!!.audioSessionId)
-                val resultCode = noiseSuppressor.setEnabled(true)
+                val resultCode = mNoiseSuppressor!!.setEnabled(true)
                 if (AudioEffect.SUCCESS == resultCode) {
                     Logger.d(TAG, "ns-->success")
                 }
             }
 
-            if (mConfig.isAGCvailable()) {
-                val automaticGainControl = AutomaticGainControl
+            if (mConfig.isEnableAGC() && AutomaticGainControl.isAvailable()) {
+                mAutomaticGainControl = AutomaticGainControl
                     .create(mAudioRecord!!.audioSessionId)
-                val resultCode = automaticGainControl.setEnabled(true)
+                val resultCode = mAutomaticGainControl!!.setEnabled(true)
                 if (AudioEffect.SUCCESS == resultCode) {
                     Logger.d(TAG, "agc-->success")
                 }
@@ -107,6 +110,9 @@ class AudioStrategySystem(config: RecordConfig) : IAudioStrategy {
 
     override fun releaseAudioRecord() {
         try {
+            mAcousticEchoCanceler?.release()
+            mAutomaticGainControl?.release()
+            mNoiseSuppressor?.release()
             mAudioRecord?.release()
             mAudioRecord = null
             if (Utils.debugCamera) {
