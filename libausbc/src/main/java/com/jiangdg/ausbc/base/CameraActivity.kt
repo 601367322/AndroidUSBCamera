@@ -73,7 +73,7 @@ abstract class CameraActivity: BaseActivity(), ICameraStateCallBack {
                 registerMultiCamera()
                 return
             }
-        }.also { view->
+        }?.also { view->
             getCameraViewContainer()?.apply {
                 removeAllViews()
                 addView(view, getViewLayoutParams(this))
@@ -115,7 +115,12 @@ abstract class CameraActivity: BaseActivity(), ICameraStateCallBack {
                     setUsbControlBlock(null)
                 }
                 mRequestPermission.set(false)
-                mCurrentCamera = null
+                try {
+                    mCurrentCamera?.cancel(true)
+                    mCurrentCamera = null
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                }
             }
 
             override fun onConnectDev(device: UsbDevice?, ctrlBlock: USBMonitor.UsbControlBlock?) {
@@ -124,6 +129,12 @@ abstract class CameraActivity: BaseActivity(), ICameraStateCallBack {
                 mCameraMap[device.deviceId]?.apply {
                     setUsbControlBlock(ctrlBlock)
                 }?.also { camera ->
+                    try {
+                        mCurrentCamera?.cancel(true)
+                        mCurrentCamera = null
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+                    }
                     mCurrentCamera = SettableFuture()
                     mCurrentCamera?.set(camera)
                     openCamera(mCameraView)
@@ -139,7 +150,12 @@ abstract class CameraActivity: BaseActivity(), ICameraStateCallBack {
 
             override fun onCancelDev(device: UsbDevice?) {
                 mRequestPermission.set(false)
-                mCurrentCamera = null
+                try {
+                    mCurrentCamera?.cancel(true)
+                    mCurrentCamera = null
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                }
             }
         })
         mCameraClient?.register()
@@ -226,8 +242,8 @@ abstract class CameraActivity: BaseActivity(), ICameraStateCallBack {
      * @param device see [UsbDevice]
      */
     protected fun requestPermission(device: UsbDevice?) {
-        mCameraClient?.requestPermission(device)
         mRequestPermission.set(true)
+        mCameraClient?.requestPermission(device)
     }
 
     /**
@@ -839,7 +855,6 @@ abstract class CameraActivity: BaseActivity(), ICameraStateCallBack {
 
     protected fun closeCamera() {
         getCurrentCamera()?.closeCamera()
-        getCurrentCamera()?.setCameraStateCallBack(null)
     }
 
     private fun surfaceSizeChanged(surfaceWidth: Int, surfaceHeight: Int) {

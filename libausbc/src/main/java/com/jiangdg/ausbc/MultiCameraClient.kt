@@ -26,6 +26,7 @@ import com.jiangdg.ausbc.utils.CameraUtils.isFilterDevice
 import com.jiangdg.ausbc.utils.CameraUtils.isUsbCamera
 import com.jiangdg.ausbc.utils.Logger
 import com.jiangdg.ausbc.utils.OpenGLUtils
+import com.jiangdg.ausbc.utils.SettableFuture
 import com.jiangdg.ausbc.utils.Utils
 import com.jiangdg.ausbc.widget.IAspectRatio
 import com.jiangdg.usb.*
@@ -37,6 +38,7 @@ import java.util.concurrent.CopyOnWriteArrayList
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 import java.util.concurrent.LinkedBlockingDeque
+import java.util.concurrent.TimeUnit
 import kotlin.math.abs
 
 /** Multi-road camera client
@@ -254,6 +256,7 @@ class MultiCameraClient(ctx: Context, callback: IDeviceConnectCallBack?) {
      */
     abstract class ICamera(val ctx: Context, val device: UsbDevice): Handler.Callback,
         H264EncodeProcessor.OnEncodeReadyListener {
+        private var isCaptureStream: Boolean = false
         private var mMediaMuxer: Mp4Muxer? = null
         private var mEncodeDataCallBack: IEncodeDataCallBack? = null
         private var mCameraThread: HandlerThread? = null
@@ -262,6 +265,7 @@ class MultiCameraClient(ctx: Context, callback: IDeviceConnectCallBack?) {
         private var mRenderManager: RenderManager?  = null
         private var mCameraView: Any? = null
         private var mCameraStateCallback: ICameraStateCallBack? = null
+        private var mSizeChangedFuture: SettableFuture<Pair<Int, Int>>? = null
         protected var mContext = ctx
         protected var mCameraRequest: CameraRequest? = null
         protected var mCameraHandler: Handler? = null
@@ -313,7 +317,15 @@ class MultiCameraClient(ctx: Context, callback: IDeviceConnectCallBack?) {
                         }
                         // use opengl render
                         // if surface is null, force off screen render whatever mode
-                        // and use init preview size for render size
+                        // and use init preview size（measure size） for render size
+                        val measureSize = try {
+                            mSizeChangedFuture = SettableFuture()
+                            mSizeChangedFuture?.get(2000, TimeUnit.MILLISECONDS)
+                        } catch (e: Exception) {
+                            e.printStackTrace()
+                            null
+                        }
+                        Logger.i(TAG, "surface measure size $measureSize")
                         mCameraRequest!!.renderMode = CameraRequest.RenderMode.OPENGL
                         val screenWidth = view?.getSurfaceWidth() ?: previewWidth
                         val screenHeight = view?.getSurfaceHeight() ?: previewHeight
@@ -347,6 +359,12 @@ class MultiCameraClient(ctx: Context, callback: IDeviceConnectCallBack?) {
                     }
                 }
                 MSG_STOP_PREVIEW -> {
+                    try {
+                        mSizeChangedFuture?.cancel(true)
+                        mSizeChangedFuture = null
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+                    }
                     closeCameraInternal()
                     mRenderManager?.getCacheEffectList()?.apply {
                         mCacheEffectList.clear()
@@ -375,9 +393,15 @@ class MultiCameraClient(ctx: Context, callback: IDeviceConnectCallBack?) {
                     captureVideoStopInternal()
                 }
                 MSG_CAPTURE_STREAM_START -> {
+                    isCaptureStream = true
                     captureStreamStartInternal()
                 }
                 MSG_CAPTURE_STREAM_STOP -> {
+                    isCaptureStream = false
+                    // if recording, cancel it
+                    if (isRecording()) {
+                        return true
+                    }
                     captureStreamStopInternal()
                 }
             }
@@ -457,10 +481,18 @@ class MultiCameraClient(ctx: Context, callback: IDeviceConnectCallBack?) {
          * Release encode processor
          */
         protected fun releaseEncodeProcessor() {
+            try {
+                mMediaMuxer?.release()
+            } catch (e: Exception) {
+                e.printStackTrace()
+                Logger.e(TAG, "release muxer failed, err is ${e.localizedMessage}")
+            }
             mVideoProcess?.stopEncode()
             mAudioProcess?.stopEncode()
             mVideoProcess = null
+            mMediaMuxer = null
             mAudioProcess = null
+            isCaptureStream = false
         }
 
         /**
@@ -539,7 +571,7 @@ class MultiCameraClient(ctx: Context, callback: IDeviceConnectCallBack?) {
          * @param height surface height
          */
         fun setRenderSize(width: Int, height: Int) {
-            mRenderManager?.setRenderSize(width, height)
+            mSizeChangedFuture?.set(Pair(width, height))
         }
 
         /**
@@ -849,9 +881,19 @@ class MultiCameraClient(ctx: Context, callback: IDeviceConnectCallBack?) {
             } != null
         }
 
-        fun isRecording() = mMediaMuxer?.isMuxerStarter() == true
+        /**
+         * check video record status
+         * Only muxer started means recording success
+         */
+        fun isRecording(): Boolean = mMediaMuxer?.isMuxerStarter() == true
 
-        fun isStreaming() = mVideoProcess?.isEncoding() == true || mAudioProcess?.isEncoding() == true
+        /**
+         * check stream status
+         * need video encoding and stream flag are true
+         */
+        fun isStreaming(): Boolean = isEncoding() && isCaptureStream
+
+        private fun isEncoding(): Boolean = mVideoProcess?.isEncoding() == true
 
         private fun captureVideoStartInternal(path: String?, durationInSec: Long, callBack: ICaptureCallBack) {
             if (! isCameraOpened()) {
@@ -864,8 +906,8 @@ class MultiCameraClient(ctx: Context, callback: IDeviceConnectCallBack?) {
             }
             captureStreamStartInternal()
             Mp4Muxer(mContext, callBack, path, durationInSec, mAudioProcess==null).apply {
-                mVideoProcess?.setMp4Muxer(this, true)
-                mAudioProcess?.setMp4Muxer(this, false)
+                mVideoProcess?.setMp4Muxer(this)
+                mAudioProcess?.setMp4Muxer(this)
             }.also { muxer ->
                 mMediaMuxer = muxer
             }
@@ -873,9 +915,18 @@ class MultiCameraClient(ctx: Context, callback: IDeviceConnectCallBack?) {
         }
 
         private fun captureVideoStopInternal() {
-            captureStreamStopInternal()
-            mMediaMuxer?.release()
-            mMediaMuxer = null
+            // if streaming, cancel it
+            if (! isStreaming()) {
+                captureStreamStopInternal()
+            }
+            try {
+                mMediaMuxer?.release()
+            } catch (e: Exception) {
+                e.printStackTrace()
+                Logger.e(TAG, "release muxer failed, err is ${e.localizedMessage}")
+            } finally {
+                mMediaMuxer = null
+            }
             Logger.i(TAG, "capturing video stop")
         }
 
@@ -884,8 +935,8 @@ class MultiCameraClient(ctx: Context, callback: IDeviceConnectCallBack?) {
                 Logger.e(TAG ,"capture stream failed, camera not opened")
                 return
             }
-            if (isStreaming()) {
-                Logger.w(TAG, "capturing stream already running")
+            if (isEncoding()) {
+                Logger.w(TAG, "capturing stream canceled, already running")
                 return
             }
             (mVideoProcess as? H264EncodeProcessor)?.apply {
@@ -909,10 +960,16 @@ class MultiCameraClient(ctx: Context, callback: IDeviceConnectCallBack?) {
         private fun captureStreamStopInternal() {
             mRenderManager?.stopRenderCodec()
             (mVideoProcess as? H264EncodeProcessor)?.apply {
+                if (! isEncoding()) {
+                    return@apply
+                }
                 stopEncode()
                 setEncodeDataCallBack(null)
             }
             (mAudioProcess as? AACEncodeProcessor)?.apply {
+                if (! isEncoding()) {
+                    return@apply
+                }
                 stopEncode()
                 setEncodeDataCallBack(null)
             }
