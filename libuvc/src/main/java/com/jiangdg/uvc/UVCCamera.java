@@ -49,7 +49,7 @@ public class UVCCamera {
 	public static final int FRAME_FORMAT_MJPEG = 1;
 
 	public static final int DEFAULT_PREVIEW_MIN_FPS = 1;
-	public static final int DEFAULT_PREVIEW_MAX_FPS = 31;
+	public static final int DEFAULT_PREVIEW_MAX_FPS = 61;
 	public static final float DEFAULT_BANDWIDTH = 1.0f;
 	public static final int DEFAULT_PREVIEW_MODE = FRAME_FORMAT_MJPEG;
 

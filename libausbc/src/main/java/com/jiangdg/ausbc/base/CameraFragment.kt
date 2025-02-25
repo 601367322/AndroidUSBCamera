@@ -18,6 +18,7 @@ package com.jiangdg.ausbc.base
 import android.content.Context
 import android.graphics.SurfaceTexture
 import android.hardware.usb.UsbDevice
+import android.os.Build
 import android.view.*
 import android.widget.FrameLayout
 import android.widget.LinearLayout
@@ -89,6 +90,10 @@ abstract class CameraFragment : BaseFragment(), ICameraStateCallBack {
                 device ?: return
                 context?.let {
                     if (mCameraMap.containsKey(device.deviceId)) {
+                        if (Build.VERSION.SDK_INT >= 34) {
+                            // 34以上版本需要多次请求权限
+                            requestPermission(device)
+                        }
                         return
                     }
                     generateCamera(it, device).apply {

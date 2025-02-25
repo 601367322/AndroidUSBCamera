@@ -4,16 +4,16 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="26"
-6-->/Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
+6-->/Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
 7        android:targetSdkVersion="34" />
-7-->/Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
+7-->/Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml
 8
 9    <uses-feature android:name="android.hardware.usb.host" />
-9-->/Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:4:5-61
-9-->/Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:4:19-59
+9-->/Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:4:5-61
+9-->/Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:4:19-59
 10
 11    <uses-permission android:name="android.permission.CAMERA" />
-11-->/Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:5:5-65
-11-->/Users/sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:5:22-62
+11-->/Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:5:5-65
+11-->/Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libausbc/src/main/AndroidManifest.xml:5:22-62
 12
 13</manifest>

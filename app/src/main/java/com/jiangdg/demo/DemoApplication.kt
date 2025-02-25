@@ -18,6 +18,7 @@ package com.jiangdg.demo
 import android.content.Context
 import androidx.multidex.MultiDex
 import com.jiangdg.ausbc.base.BaseApplication
+import com.jiangdg.utils.MMKVUtils
 
 /**
  *
@@ -32,5 +33,6 @@ class DemoApplication: BaseApplication() {
 
     override fun onCreate() {
         super.onCreate()
+        MMKVUtils.init(this)
     }
 }

@@ -17,6 +17,7 @@ package com.jiangdg.utils.imageloader
 
 import android.graphics.Bitmap
 import android.graphics.drawable.Drawable
+import com.bumptech.glide.load.resource.bitmap.BitmapTransformation
 
 /**
  * Image loader
@@ -58,7 +59,12 @@ interface ILoader<T> {
      * @param placeHolder place holder
      * @param bitmapTransformation transformation
      */
-
+    fun load(
+        imageView: T,
+        url: String?,
+        placeHolder: Int,
+        bitmapTransformation: BitmapTransformation?
+    )
 
     /**
      * Load rounded from url

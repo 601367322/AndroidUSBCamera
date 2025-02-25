@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml:24:1-27:12
-INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml:24:1-27:12
-INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml:24:1-27:12
+ADDED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml:24:1-27:12
+INJECTED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml:24:1-27:12
+INJECTED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml:24:1-27:12
 	package
-		ADDED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml:25:5-36
-		INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
-		INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
+		ADDED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml:25:5-36
+		INJECTED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml:24:11-69
+		ADDED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml:24:11-69
 uses-sdk
-INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
-INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
-INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
-INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
+INJECTED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
+INJECTED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
+INJECTED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
+INJECTED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
-		ADDED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
-		INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
+		ADDED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
-		ADDED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
-		INJECTED from /Users/sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
+		ADDED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
+		INJECTED from /Volumes/Sen/Documents/project/trtc/AndroidUSBCamera/libuvc/src/main/AndroidManifest.xml
